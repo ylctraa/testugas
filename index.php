@@ -142,7 +142,6 @@ require 'cek.php';
                                             </div>
                                         </div>
 
-                                        </tr>
                                         <?php
                                         };
 
