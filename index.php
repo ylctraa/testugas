@@ -72,8 +72,8 @@ require 'cek.php';
                                        
                                         <?php
                                           $ambilsemuadatastock = mysqli_query($conn,"select * from stock");
+                                         $i = 1;
                                           while($data=mysqli_fetch_array($ambilsemuadatastock)){ 
-                                            $i = 1;
                                             $namabarang = $data['namabarang'];
                                             $deskripsi = $data['deskripsi'];
                                             $stock = $data['stock'];
