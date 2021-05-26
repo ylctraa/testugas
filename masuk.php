@@ -88,8 +88,8 @@ require 'cek.php';
                                             <td><?=$qty;?></td>
                                             <td><?=$keterangan;?></td>
                                              <td> 
-                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idb;?>"> Edit </button>
-                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?=$idb;?>"> Delete </button>
+                                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idm;?>"> Edit </button>
+                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?=$idm;?>"> Delete </button>
                                             </td>
                                         </tr>
                                         <!-- Edit Modal -->
