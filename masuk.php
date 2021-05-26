@@ -93,7 +93,7 @@ require 'cek.php';
                                             </td>
                                         </tr>
                                         <!-- Edit Modal -->
-                                          <div class="modal fade" id="edit<?=$idb;?>">
+                                          <div class="modal fade" id="edit<?=$idm;?>">
                                             <div class="modal-dialog">
                                               <div class="modal-content">
                                               
@@ -122,7 +122,7 @@ require 'cek.php';
                                             </div>
 
                                                      <!-- Delete Modal -->
-                                          <div class="modal fade" id="delete<?=$idb;?>">
+                                          <div class="modal fade" id="delete<?=$idm;?>">
                                             <div class="modal-dialog">
                                               <div class="modal-content">
                                               
