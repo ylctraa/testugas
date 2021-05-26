@@ -109,6 +109,7 @@ require 'cek.php';
                                                   <input type="text" name="namabarang" value="<?=$namabarang;?>" placeholder="Nama Barang" class="form-control" required>
                                                   <br>
                                                   <input type="text" name="deskripsi" value= "<?=$deskripsi;?>" placeholder="Deskripsi Barang" class="form-control" required>
+                                                   <input type="hidden" name="idb" value="<?=$idb;?>">
                                                   <button type="submit" class="btn btn-primary" name="updatebarang">Submit</button>
                                                 </div>
                                                 </form>
@@ -130,6 +131,7 @@ require 'cek.php';
                                                 <!-- Modal body -->
                                                 <form method="post">
                                                  <div class="modal-body">Apakah Anda Yakin ingin menghapus <?=$namabarang;?>?
+                                                      <input type="hidden" name="idb" value="<?=$idb;?>">
                                                   <br>
                                                      <br>
                                                          <button type="submit" class="btn btn-danger" name="hapusbarang">Hapus</button>
