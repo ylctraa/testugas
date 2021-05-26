@@ -62,10 +62,10 @@ require 'cek.php';
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+                                            <th>Tanggal</th>
                                             <th>Nama Barang</th>
-                                            <th>Deskripsi</th>
-                                            <th>Stock</th>
+                                            <th>Jumlah</th>
+                                            <th>Keterangan</th>
                                         </tr>
                                     </thead>
                                     <tbody>
