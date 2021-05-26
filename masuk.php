@@ -69,12 +69,27 @@ require 'cek.php';
                                         </tr>
                                     </thead>
                                     <tbody>
+                                      
+                                         <?php
+                                          $ambilsemuadatastock = mysqli_query($conn,"select * from masuk m, stock s where s.idbarang = m.idbarang");
+                                          while($data=mysqli_fetch_array($ambilsemuadatastock)){ 
+                                            $tanggal = $data['tanggal'];
+                                            $namabarang = $data['namabarang'];
+                                            $qty = $data['qty'];
+                                            $keterangan = $data['keterangan'];
+                                        ?>
+
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
+                                            <td><?=$tanggal;?></td>
+                                            <td><?=$namabarang;?></td>
+                                            <td><?=$qty;?></td>
+                                            <td><?=$keterangan;?></td>
                                         </tr>
+                                        <?php
+                                        };
+
+                                        ?>
+                                        
                                     </tbody>
                                 </table>
                             </div>
