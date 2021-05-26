@@ -116,6 +116,7 @@ require 'cek.php';
                                                 
                                               </div>
                                             </div>
+                                        </div>
 
                                                      <!-- Delete Modal -->
                                           <div class="modal fade" id="delete<?=$idb;?>">
