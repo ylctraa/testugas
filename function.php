@@ -79,4 +79,19 @@ if(isset($_POST['updatebarang'])){
 
 }
 
+//delete barang dari stock 
+
+if(isset($_POST['hapusbarang'])){
+	$idb = $_POST['idb'];
+	
+	$hapus = mysqli_query($conn, "delete from stock where idbarang='$idb'");
+	if($hapus) {
+		header('location:index.php');
+	} else{
+	    echo 'Gagal';
+	    header('location:index.php');
+    }
+
+}
+
 ?>
