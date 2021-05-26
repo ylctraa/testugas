@@ -136,6 +136,30 @@ if(isset($_POST['updatebarangmasuk'])){
 
 		}
 
+//menghapus barang massuk
+ 
+		if(isset($_POST['hapusbarangmasuk'])){
+			$idb = $_POST['idb'];
+			$qty = $_POST['qty'];
+			$idm = $_POST['idm'];
 
+			$getdatastock = mysqli_query($conn, "select * from stock where idbarang='$idb'");
+			$data = mysqli_fetch_array($getdatastock);
+			$stock = $data['stock'];
+
+			$selisih = $stock-$qty;
+
+
+			$update = mysqli_query($conn, "update stock set stock='$selisih' , where idbarang='$idb'");
+			$hapusdata = mysqli_query($conn, "delete from masuk where idmasuk='$idm'");
+
+			if($update&&$hapusdata){
+				header('location:masuk.php');
+			}else {
+				header('location:masuk.php');
+			}
+		}
+
+}
 
 ?>
