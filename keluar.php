@@ -65,7 +65,7 @@ require 'cek.php';
                                             <th>Tanggal</th>
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
-                                            <th>Penerima</th>
+                                            <th>Nama Penerima</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
